@@ -26,30 +26,31 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@800&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
 <style>
-:root{--paper:#fcfaf4;--paper-2:#f2ecdf;--ink:#303030;--ink-2:#4f5d5a;--ink-3:#8a948f;--teal:#009b9f;--teal-d:#00787c;--teal-soft:#E3F2F0;--on-teal:#fff;--line:#dcdcd8;--line-2:#e9e1d1;--f-display:"Archivo",Arial,sans-serif;--f-body:"Hanken Grotesk",system-ui,sans-serif;--f-mono:"JetBrains Mono",ui-monospace,Menlo,monospace;--gut:clamp(20px,4vw,72px);--soon:#8a5a00;--soon-soft:#FFF5DC;--soon-line:#F0DDA8}
+:root{--paper:#fcfaf4;--paper-2:#f2ecdf;--ink:#303030;--ink-2:#4f5d5a;--ink-3:#8a948f;--teal:#009b9f;--teal-d:#00787c;--teal-soft:#E3F2F0;--on-teal:#fff;--line:#dcdcd8;--line-2:#e9e1d1;--f-display:"Archivo",Arial,sans-serif;--f-body:"Hanken Grotesk",system-ui,sans-serif;--f-mono:"JetBrains Mono",ui-monospace,Menlo,monospace;--gut:clamp(20px,4vw,72px);--maxw:calc(1416px + 2*var(--gut));--soon:#8a5a00;--soon-soft:#FFF5DC;--soon-line:#F0DDA8}
 *{box-sizing:border-box}html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
 body{margin:0;background:var(--paper);color:var(--ink-2);font-family:var(--f-body);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased}
 h1,h2,h3{font-family:var(--f-display);color:var(--ink);margin:0;font-weight:800;letter-spacing:-.02em;line-height:1.08;text-wrap:balance}
 strong{color:var(--ink);font-weight:600}
 a{color:var(--teal-d)}
-.wrap{max-width:1180px;margin:0 auto;padding:0 var(--gut)}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 var(--gut)}
 .draft{position:fixed;top:14px;right:14px;z-index:9;background:var(--soon-soft);border:1px solid var(--soon-line);color:var(--soon);font-family:var(--f-mono);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;border-radius:999px;padding:6px 12px}
-.top{display:flex;align-items:center;justify-content:space-between;padding:22px var(--gut);max-width:1180px;margin:0 auto}
+.top{display:flex;align-items:center;justify-content:space-between;padding:22px var(--gut);max-width:var(--maxw);margin:0 auto}
 .top img{height:30px}
 .top .mono{font-family:var(--f-mono);font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3)}
-.hero{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(20px,4vw,56px);align-items:center;padding:clamp(24px,5vw,64px) var(--gut) clamp(32px,5vw,72px);max-width:1180px;margin:0 auto}
+.hero{display:flow-root;padding:clamp(24px,4vw,56px) var(--gut) clamp(40px,5vw,80px);max-width:var(--maxw);margin:0 auto}
 .eyebrow{font-family:var(--f-mono);font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;color:var(--teal-d);display:inline-flex;align-items:center;gap:.7em;margin-bottom:1.3rem}
 .eyebrow::before{content:"";width:30px;height:1px;background:var(--teal)}
-.h-hero{font-size:clamp(2.1rem,4.6vw,3.9rem)}
+.h-hero{font-size:clamp(2.1rem,4.5vw,4.4rem);text-wrap:pretty}
 .h-hero .tl{color:var(--teal-d)}
-.lead{font-size:clamp(1.05rem,1.4vw,1.25rem);line-height:1.5;color:var(--ink-2);margin:1.5rem 0 2rem;max-width:46ch}
+.lead{font-size:clamp(1.05rem,1.4vw,1.25rem);line-height:1.5;color:var(--ink-2);margin:1.6rem 0 2rem;text-wrap:pretty}
 .cta{display:flex;gap:12px;flex-wrap:wrap}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:.6em;background:var(--teal);color:var(--on-teal);font-family:var(--f-mono);font-size:.84rem;font-weight:500;letter-spacing:.05em;text-transform:uppercase;padding:1.05em 1.6em;border:2px solid var(--teal);border-radius:8px;text-decoration:none;transition:background .2s,transform .15s}
 .btn:hover{background:var(--teal-d);border-color:var(--teal-d);transform:translateY(-2px)}
 .btn--out{background:transparent;color:var(--ink);border-color:var(--ink)}
 .btn--out:hover{background:var(--ink);color:var(--paper)}
 .trust{display:flex;gap:1.4rem;flex-wrap:wrap;margin-top:1.8rem;font-family:var(--f-mono);font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3)}
-.media img{width:100%;height:auto;display:block;filter:drop-shadow(0 26px 42px rgba(18,38,38,.16))}
+.hero .media{float:right;width:min(58%,860px);margin:-8px calc(var(--gut)*-.35) 12px 32px;shape-outside:polygon(39.6% 2.7%, 38.3% 3.9%, 37.7% 9.8%, 35.5% 56.1%, 2.2% 72.8%, 2.2% 74.6%, 7.1% 77.3%, 64.7% 96.1%, 68.6% 96.5%, 89.3% 76.5%, 93.7% 70.7%, 94.8% 64.1%, 97.8% 10.7%, 97.5% 7.7%, 96.2% 6.2%) content-box;shape-margin:clamp(24px,2.6vw,40px)}
+.media img{width:100%;height:auto;display:block;filter:drop-shadow(0 30px 40px rgba(18,38,38,.12))}
 .media .cap{font-family:var(--f-mono);font-size:.7rem;color:var(--ink-3);text-align:center;margin-top:10px;letter-spacing:.04em}
 section.s{padding:clamp(40px,6vw,88px) 0;border-top:1px solid var(--line)}
 section.s.band{background:var(--paper-2)}
@@ -64,24 +65,25 @@ ul.dash{list-style:none;padding:0;margin:0}
 ul.dash li{position:relative;padding:.45rem 0 .45rem 1.5rem;border-bottom:1px solid var(--line-2)}
 ul.dash li::before{content:"";position:absolute;left:0;top:1.05rem;width:8px;height:8px;border-radius:50%;background:var(--teal)}
 ul.dash li:last-child{border-bottom:0}
-.quote{font-size:clamp(1.05rem,1.5vw,1.3rem);color:var(--ink);line-height:1.45;border-left:3px solid var(--teal);padding-left:1.2rem;margin:1.4rem 0 0;max-width:60ch}
+.quote{font-size:clamp(1.05rem,1.5vw,1.3rem);color:var(--ink);line-height:1.45;border-left:3px solid var(--teal);padding-left:1.2rem;margin:1.4rem 0 0}
 .scene{background:#fff;border:1px solid var(--line);border-radius:14px;padding:24px}
 .scene .k{font-family:var(--f-mono);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--teal-d);margin-bottom:.6rem}
 .scene h3{font-size:1.12rem;margin-bottom:.6rem}
 .scene p{margin:0;font-size:.98rem}
 .goal{margin-top:1.8rem;display:flex;gap:1.2rem;align-items:baseline;flex-wrap:wrap}
 .goal .big{font-family:var(--f-display);font-weight:800;font-size:clamp(2.2rem,5vw,4rem);color:var(--teal-d);letter-spacing:-.04em;line-height:.9}
-.goal p{margin:0;max-width:44ch}
+.goal p{margin:0;flex:1 1 320px}
 .steps{counter-reset:st;display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:1.4rem}
 .step{counter-increment:st;background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px}
 .step::before{content:counter(st);font-family:var(--f-display);font-weight:800;font-size:2.4rem;color:var(--teal);line-height:.9;display:block;margin-bottom:.6rem}
 .step h3{font-size:1.05rem;margin-bottom:.5rem}
 .step p{margin:0;font-size:.98rem}
 .tag{display:inline-block;font-size:.68rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;border-radius:999px;padding:3px 10px;background:var(--soon-soft);color:var(--soon);border:1px solid var(--soon-line);margin-left:8px;vertical-align:middle}
-footer{border-top:1px solid var(--line);padding:28px var(--gut) 40px;font-family:var(--f-mono);font-size:.72rem;letter-spacing:.06em;color:var(--ink-3);text-transform:uppercase;max-width:1180px;margin:0 auto;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
-@media (max-width:900px){.hero,.grid2{grid-template-columns:1fr}.cards,.steps{grid-template-columns:1fr}.hero{padding-top:12px}.media{order:-1}}
+footer{border-top:1px solid var(--line);padding:28px var(--gut) 40px;font-family:var(--f-mono);font-size:.72rem;letter-spacing:.06em;color:var(--ink-3);text-transform:uppercase;max-width:var(--maxw);margin:0 auto;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+@media (max-width:1100px){.hero .media{width:54%;margin-right:0}}
+@media (max-width:900px){.grid2{grid-template-columns:1fr}.cards,.steps{grid-template-columns:1fr}.hero{padding-top:8px}.hero .media{float:none;width:100%;margin:0 0 20px;shape-outside:none}}
 .langs{display:flex;gap:6px}.langs a{font-family:var(--f-mono);font-size:.72rem;letter-spacing:.08em;text-decoration:none;color:var(--ink-3);padding:6px 10px;border-radius:999px;border:1px solid transparent}.langs a.on{color:var(--teal-d);border-color:var(--line)}.langs a:hover{color:var(--teal-d)}
-.sub{margin-top:1.6rem;font-size:.98rem;color:var(--ink-2);max-width:52ch;border-left:3px solid var(--teal);padding-left:1rem}
+.sub{margin-top:1.6rem;font-size:.98rem;color:var(--ink-2);border-left:3px solid var(--teal);padding-left:1rem}
 .cat{font-family:var(--f-display);font-weight:800;font-size:clamp(1.35rem,2.4vw,1.9rem);line-height:1.15;letter-spacing:-.01em;color:var(--teal-d);margin:-.4rem 0 1.1rem;text-wrap:balance}
 .awc-photo{margin:1.8rem 0 0}.awc-photo img{width:100%;height:auto;display:block;border-radius:14px}
 </style>
@@ -90,19 +92,19 @@ footer{border-top:1px solid var(--line);padding:28px var(--gut) 40px;font-family
 <div class="top"><a href="https://arvut.ch/en/"><img src="../logo.png" alt="Arvut"></a><nav class="langs" aria-label="Language"><a href="../de/">DE</a> <a href="../fr/">FR</a> <a href="../it/">IT</a> <a href="../en/" class="on">EN</a></nav></div>
 
 <section class="hero">
+  <div class="media">
+    <picture><source srcset="../img/awc-hero.webp" type="image/webp"><img src="../img/awc-hero.png" alt="ABM on the screen of an Arvut working computer" width="1800" height="1505"></picture>
+  </div>
   <div>
     <span class="eyebrow">AWC · ABM Working Computer</span>
     <p class="cat">The bookkeeping machine you don’t buy</p>
-    <h1 class="h-hero">The computer that takes over the routine. <span class="tl">Control and signature stay in your firm.</span></h1>
+    <h1 class="h-hero">The computer that takes over the routine. <span class="tl">Control and signature stay in your&nbsp;firm.</span></h1>
     <p class="lead">We don't sell software or hardware, and we don't take the work away from your accountant. We put an Arvut computer on their desk: on it, ABM, our AI agents and your folders, updated every day. Nothing to learn. No external IT needed.</p>
     <div class="cta">
       <a class="btn" href="https://arvut.ch/en/contact">We bring it for a day →</a>
       <a class="btn btn--out" href="https://arvut.ch/automation/#en">What is already automated</a>
     </div>
     <p class="sub">Owned by Arvut, works at your desk. Documents into the folder, «process» – bank, receipts and VAT come back prepared. The mandates stay yours.</p>
-  </div>
-  <div class="media">
-    <picture><source srcset="../img/awc-hero.webp" type="image/webp"><img src="../img/awc-hero.png" alt="ABM on the screen of an Arvut working computer" width="1800" height="1505"></picture>
   </div>
 </section>
 
@@ -127,7 +129,7 @@ footer{border-top:1px solid var(--line);padding:28px var(--gut) 40px;font-family
 <section class="s band"><div class="wrap">
   <span class="s-no">02 · What the AWC is</span>
   <h2 class="h2">A workstation we bring fully set up, install, update and maintain</h2>
-  <p style="max-width:62ch">For your accountant, your CFO, the person who looks after receivables and payables. On it:</p>
+  <p>For your accountant, your CFO, the person who looks after receivables and payables. On it:</p>
   <div class="cards">
     <div class="card"><h3>ABM and Vera</h3><p>Books, receivables and payables ledgers, bank, documents. The assistant Vera answers from the books.</p></div>
     <div class="card"><h3>ABM Courier</h3><p>Documents arrive by themselves from the client's computer.</p></div>
@@ -173,14 +175,14 @@ footer{border-top:1px solid var(--line);padding:28px var(--gut) 40px;font-family
     </ul>
   </div>
   <h3 style="margin-top:2rem;font-size:1.15rem">And your clients can have what a fiduciary usually doesn't sell <span class="tag">built on your mandate</span></h3>
-  <p style="max-width:70ch">Warehouse and inventory management · cash registers and POS · automatic reminders to debtors · ERP based on EspoCRM. Each item becomes a line in the contract.</p>
-  <p style="max-width:70ch">What is automated today, what can be automated and what stays with people, on one page: <a href="https://arvut.ch/automation/#en">arvut.ch/automation</a>.</p>
+  <p>Warehouse and inventory management · cash registers and POS · automatic reminders to debtors · ERP based on EspoCRM. Each item becomes a line in the contract.</p>
+  <p>What is automated today, what can be automated and what stays with people, on one page: <a href="https://arvut.ch/automation/#en">arvut.ch/automation</a>.</p>
   <p class="quote">Binders and the basement archive are no longer working tools: the work is done with the digital copy attached to the entry. What must be kept in the original is decided by the law, not by habit.</p>
 </div></section>
 
 <section class="s"><div class="wrap">
   <span class="s-no">05 · The office, if you want one</span>
-  <p style="max-width:66ch;font-size:1.15rem;color:var(--ink)">The office becomes a choice, not a necessity: with the AWC the accountant works wherever suits them, and the books reconcile every morning.</p>
+  <p style="font-size:1.15rem;color:var(--ink)">The office becomes a choice, not a necessity: with the AWC the accountant works wherever suits them, and the books reconcile every morning.</p>
   <figure class="awc-photo"><picture><source srcset="../img/awc-scene.webp" type="image/webp"><img src="../img/awc-scene.jpg" alt="An AWC notebook on a table by the window, with a lake and mountains behind" width="1600" height="900" loading="lazy"></picture></figure>
 </div></section>
 
