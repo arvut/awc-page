@@ -1,6 +1,6 @@
-/* Кнопка «наверх»: появляется после первого экрана, плавно возвращает наверх.
-   Отдельный файл намеренно: CSP arvut.ch разрешает только script-src 'self'.
-   Без JS кнопка остаётся обычной ссылкой href="#" (видна всегда). */
+/* Back-to-top button: appears after the first screen, scrolls smoothly to the top.
+   External file on purpose: arvut.ch CSP allows script-src 'self' only.
+   Without JS the button stays a plain href="#" link (always visible). */
 (function () {
   var btn = document.querySelector(".to-top");
   if (!btn) return;
