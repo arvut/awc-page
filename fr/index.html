@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index, follow">
+<title>AWC – l'ordinateur sur lequel la routine est déjà faite | Arvut</title>
+<meta name="description" content="AWC, ABM Working Computer : un poste de travail Arvut sur le bureau de votre comptable. ABM, agents IA, vos dossiers ; mises à jour chaque jour. La routine est faite le matin, la signature reste la vôtre.">
+<link rel="canonical" href="https://arvut.ch/awc/fr/">
+<link rel="alternate" hreflang="de-CH" href="https://arvut.ch/awc/de/">
+<link rel="alternate" hreflang="fr-CH" href="https://arvut.ch/awc/fr/">
+<link rel="alternate" hreflang="it-CH" href="https://arvut.ch/awc/it/">
+<link rel="alternate" hreflang="en" href="https://arvut.ch/awc/en/">
+<link rel="alternate" hreflang="x-default" href="https://arvut.ch/awc/de/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Arvut">
+<meta property="og:locale" content="fr_CH">
+<meta property="og:title" content="AWC – l'ordinateur sur lequel la routine est déjà faite | Arvut">
+<meta property="og:description" content="AWC, ABM Working Computer : un poste de travail Arvut sur le bureau de votre comptable. ABM, agents IA, vos dossiers ; mises à jour chaque jour. La routine est faite le matin, la signature reste la vôtre.">
+<meta property="og:url" content="https://arvut.ch/awc/fr/">
+<meta property="og:image" content="https://arvut.ch/og/awc.jpg">
+<meta property="og:image:alt" content="AWC · ABM Working Computer — arvut.ch/awc">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@800&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#fcfaf4;--paper-2:#f2ecdf;--ink:#303030;--ink-2:#4f5d5a;--ink-3:#8a948f;--teal:#009b9f;--teal-d:#00787c;--teal-soft:#E3F2F0;--on-teal:#fff;--line:#dcdcd8;--line-2:#e9e1d1;--f-display:"Archivo",Arial,sans-serif;--f-body:"Hanken Grotesk",system-ui,sans-serif;--f-mono:"JetBrains Mono",ui-monospace,Menlo,monospace;--gut:clamp(20px,4vw,72px);--soon:#8a5a00;--soon-soft:#FFF5DC;--soon-line:#F0DDA8}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink-2);font-family:var(--f-body);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:var(--f-display);color:var(--ink);margin:0;font-weight:800;letter-spacing:-.02em;line-height:1.08;text-wrap:balance}
+strong{color:var(--ink);font-weight:600}
+a{color:var(--teal-d)}
+.wrap{max-width:1180px;margin:0 auto;padding:0 var(--gut)}
+.draft{position:fixed;top:14px;right:14px;z-index:9;background:var(--soon-soft);border:1px solid var(--soon-line);color:var(--soon);font-family:var(--f-mono);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;border-radius:999px;padding:6px 12px}
+.top{display:flex;align-items:center;justify-content:space-between;padding:22px var(--gut);max-width:1180px;margin:0 auto}
+.top img{height:30px}
+.top .mono{font-family:var(--f-mono);font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3)}
+.hero{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(20px,4vw,56px);align-items:center;padding:clamp(24px,5vw,64px) var(--gut) clamp(32px,5vw,72px);max-width:1180px;margin:0 auto}
+.eyebrow{font-family:var(--f-mono);font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;color:var(--teal-d);display:inline-flex;align-items:center;gap:.7em;margin-bottom:1.3rem}
+.eyebrow::before{content:"";width:30px;height:1px;background:var(--teal)}
+.h-hero{font-size:clamp(2.1rem,4.6vw,3.9rem)}
+.h-hero .tl{color:var(--teal-d)}
+.lead{font-size:clamp(1.05rem,1.4vw,1.25rem);line-height:1.5;color:var(--ink-2);margin:1.5rem 0 2rem;max-width:46ch}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.6em;background:var(--teal);color:var(--on-teal);font-family:var(--f-mono);font-size:.84rem;font-weight:500;letter-spacing:.05em;text-transform:uppercase;padding:1.05em 1.6em;border:2px solid var(--teal);border-radius:8px;text-decoration:none;transition:background .2s,transform .15s}
+.btn:hover{background:var(--teal-d);border-color:var(--teal-d);transform:translateY(-2px)}
+.btn--out{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn--out:hover{background:var(--ink);color:var(--paper)}
+.trust{display:flex;gap:1.4rem;flex-wrap:wrap;margin-top:1.8rem;font-family:var(--f-mono);font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3)}
+.media img{width:100%;height:auto;display:block;filter:drop-shadow(0 26px 42px rgba(18,38,38,.16))}
+.media .cap{font-family:var(--f-mono);font-size:.7rem;color:var(--ink-3);text-align:center;margin-top:10px;letter-spacing:.04em}
+section.s{padding:clamp(40px,6vw,88px) 0;border-top:1px solid var(--line)}
+section.s.band{background:var(--paper-2)}
+.s-no{font-family:var(--f-mono);font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;color:var(--teal-d);display:block;margin-bottom:.9rem}
+.h2{font-size:clamp(1.6rem,3vw,2.5rem);max-width:28ch;margin-bottom:1.4rem}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,4vw,56px);align-items:start}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:1.6rem}
+.card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px 22px 20px}
+.card h3{font-size:1.05rem;margin-bottom:.5rem}
+.card p{margin:0;font-size:.98rem}
+ul.dash{list-style:none;padding:0;margin:0}
+ul.dash li{position:relative;padding:.45rem 0 .45rem 1.5rem;border-bottom:1px solid var(--line-2)}
+ul.dash li::before{content:"";position:absolute;left:0;top:1.05rem;width:8px;height:8px;border-radius:50%;background:var(--teal)}
+ul.dash li:last-child{border-bottom:0}
+.quote{font-size:clamp(1.05rem,1.5vw,1.3rem);color:var(--ink);line-height:1.45;border-left:3px solid var(--teal);padding-left:1.2rem;margin:1.4rem 0 0;max-width:60ch}
+.scene{background:#fff;border:1px solid var(--line);border-radius:14px;padding:24px}
+.scene .k{font-family:var(--f-mono);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--teal-d);margin-bottom:.6rem}
+.scene h3{font-size:1.12rem;margin-bottom:.6rem}
+.scene p{margin:0;font-size:.98rem}
+.goal{margin-top:1.8rem;display:flex;gap:1.2rem;align-items:baseline;flex-wrap:wrap}
+.goal .big{font-family:var(--f-display);font-weight:800;font-size:clamp(2.2rem,5vw,4rem);color:var(--teal-d);letter-spacing:-.04em;line-height:.9}
+.goal p{margin:0;max-width:44ch}
+.steps{counter-reset:st;display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:1.4rem}
+.step{counter-increment:st;background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px}
+.step::before{content:counter(st);font-family:var(--f-display);font-weight:800;font-size:2.4rem;color:var(--teal);line-height:.9;display:block;margin-bottom:.6rem}
+.step h3{font-size:1.05rem;margin-bottom:.5rem}
+.step p{margin:0;font-size:.98rem}
+.tag{display:inline-block;font-size:.68rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;border-radius:999px;padding:3px 10px;background:var(--soon-soft);color:var(--soon);border:1px solid var(--soon-line);margin-left:8px;vertical-align:middle}
+footer{border-top:1px solid var(--line);padding:28px var(--gut) 40px;font-family:var(--f-mono);font-size:.72rem;letter-spacing:.06em;color:var(--ink-3);text-transform:uppercase;max-width:1180px;margin:0 auto;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+@media (max-width:900px){.hero,.grid2{grid-template-columns:1fr}.cards,.steps{grid-template-columns:1fr}.hero{padding-top:12px}.media{order:-1}}
+.langs{display:flex;gap:6px}.langs a{font-family:var(--f-mono);font-size:.72rem;letter-spacing:.08em;text-decoration:none;color:var(--ink-3);padding:6px 10px;border-radius:999px;border:1px solid transparent}.langs a.on{color:var(--teal-d);border-color:var(--line)}.langs a:hover{color:var(--teal-d)}
+.sub{margin-top:1.6rem;font-size:.98rem;color:var(--ink-2);max-width:52ch;border-left:3px solid var(--teal);padding-left:1rem}
+.cat{font-family:var(--f-display);font-weight:800;font-size:clamp(1.35rem,2.4vw,1.9rem);line-height:1.15;letter-spacing:-.01em;color:var(--teal-d);margin:-.4rem 0 1.1rem;text-wrap:balance}
+.awc-photo{margin:1.8rem 0 0}.awc-photo img{width:100%;height:auto;display:block;border-radius:14px}
+</style>
+</head>
+<body>
+<div class="top"><a href="https://arvut.ch/fr/"><img src="../logo.png" alt="Arvut"></a><nav class="langs" aria-label="Language"><a href="../de/">DE</a> <a href="../fr/" class="on">FR</a> <a href="../it/">IT</a> <a href="../en/">EN</a></nav></div>
+
+<section class="hero">
+  <div>
+    <span class="eyebrow">AWC · ABM Working Computer</span>
+    <p class="cat">La machine comptable en abonnement</p>
+    <h1 class="h-hero">L'ordinateur qui prend en charge la routine. <span class="tl">Le contrôle et la signature restent chez vous.</span></h1>
+    <p class="lead">Nous ne vendons ni logiciel ni matériel, et nous ne retirons pas le travail à votre comptable. Nous posons sur son bureau un ordinateur Arvut : dessus, ABM, nos agents IA et vos classeurs, mis à jour chaque jour. Rien à apprendre. Pas besoin d'informaticien externe.</p>
+    <div class="cta">
+      <a class="btn" href="https://arvut.ch/fr/contact">Nous l'apportons pour une journée →</a>
+      <a class="btn btn--out" href="https://arvut.ch/automation/#fr">Ce qui est déjà automatisé</a>
+    </div>
+    <p class="sub">Appartient à Arvut, travaille chez vous. Les documents dans le dossier, «traiter» : la banque, les justificatifs et la TVA reviennent préparés. Les mandats restent les vôtres.</p>
+  </div>
+  <div class="media">
+    <picture><source srcset="../img/awc-hero.webp" type="image/webp"><img src="../img/awc-hero.png" alt="ABM à l'écran d'un ordinateur de travail Arvut" width="1800" height="1505"></picture>
+  </div>
+</section>
+
+<section class="s"><div class="wrap">
+  <span class="s-no">01 · Ce qu'est vraiment une fiduciaire</span>
+  <h2 class="h2">Une fiduciaire, ce n'est pas seulement des logiciels et des comptables</h2>
+  <div class="grid2">
+    <ul class="dash">
+      <li><strong>Des bureaux couverts de classeurs.</strong> Dans les classeurs, des intercalaires. Derrière les intercalaires, du papier.</li>
+      <li><strong>Des tableaux Excel fragiles</strong>, compréhensibles seulement par celui qui les a construits.</li>
+      <li><strong>Une cave</strong> remplie de dix ans d'archives papier.</li>
+    </ul>
+    <ul class="dash">
+      <li><strong>Un informaticien externe sur appel</strong> : cher, lent, à chaque fois quelqu'un d'autre.</li>
+      <li><strong>Les virus et la sécurité</strong>, dont vous portez la responsabilité.</li>
+      <li><strong>Un bureau coûteux.</strong> Alors que beaucoup préféreraient travailler de chez eux.</li>
+    </ul>
+  </div>
+  <p class="quote">Tout cela coûte de l'argent, et rien de tout cela ne figure dans la liste de prix d'aucun logiciel comptable.</p>
+</div></section>
+
+<section class="s band"><div class="wrap">
+  <span class="s-no">02 · Ce qu'est l'AWC</span>
+  <h2 class="h2">Un poste de travail que nous apportons configuré, installons, mettons à jour et entretenons</h2>
+  <p style="max-width:62ch">Pour votre comptable, votre CFO, la personne qui suit les débiteurs et les créanciers. Dessus :</p>
+  <div class="cards">
+    <div class="card"><h3>ABM et Vera</h3><p>Les livres, les échéanciers, la banque, les pièces. L'assistante Vera répond à partir des livres.</p></div>
+    <div class="card"><h3>ABM Courier</h3><p>Les pièces arrivent d'elles-mêmes depuis l'ordinateur du client.</p></div>
+    <div class="card"><h3>Agents IA d'Arvut</h3><p>Ils travaillent avec les fichiers et les dossiers directement sur cet ordinateur et avec les livres dans ABM : passer un relevé bancaire, émettre les factures, classer les pièces, préparer le décompte.</p></div>
+    <div class="card"><h3>Notre image, nos mises à jour</h3><p>L'ordinateur reste la propriété d'Arvut : nous l'entretenons, le mettons à jour et le remplaçons si nécessaire. À distance, uniquement avec votre accord ; nous ne voyons ni l'écran ni le travail de votre comptable.</p></div>
+    <div class="card"><h3>Compétences et plugins</h3><p>Mis à jour pratiquement chaque jour, sans appeler l'informatique. Ce sont les compétences qui évoluent ; les règles comptables et les taux de TVA suivent la loi, pas la version. Chaque version est conservée, la précédente peut être rétablie.</p></div>
+    <div class="card"><h3>Les données ne sont pas dessus</h3><p>Les livres et les pièces sont dans ABM, avec des copies en plusieurs lieux indépendants. L'export de vos livres sous forme de fichier, à première demande, y compris si vous partez.</p></div>
+  </div>
+  <p class="quote"><strong>Rien à apprendre.</strong> Ni nouveau logiciel, ni outils d'IA. Ni spécialistes externes à faire venir pour la configuration et le support. Tout est sous la main, ABM fait tout.</p>
+  <p class="quote"><strong>La responsabilité reste là où est sa place.</strong> Une pièce douteuse, le système ne la passe pas : il la renvoie avec une question. Rien ne part dans le décompte sans votre « Appliquer ».</p>
+  <div class="goal"><span class="big">99 %</span><p><strong>Notre objectif</strong> : la comptabilité financière, la tenue des comptes et la gestion d'entreprise sans travail manuel. Aujourd'hui, passent sans la main du comptable : la banque, le classement des pièces, les échéanciers, les factures QR, la TVA. Restent à la main le contrôle, les pièces douteuses et la signature : ce qui exige votre professionnalisme. La liste complète : <a href="https://arvut.ch/automation/#fr">arvut.ch/automation</a>.</p></div>
+</div></section>
+
+<section class="s"><div class="wrap">
+  <span class="s-no">03 · Trois scènes vécues</span>
+  <h2 class="h2">Tout cela, nous l'avons vu nous-mêmes</h2>
+  <div class="cards">
+    <div class="scene"><div class="k">Première scène</div><h3>« Chez nous, tout est automatisé, on ne travaille pas avec du papier »</h3><p>Sur le bureau du comptable, deux écrans : sur l'un, le décompte de salaire ; sur l'autre, le programme comptable. Le comptable lit les chiffres d'un écran et les saisit dans l'autre. Ce sont deux modules du même programme. « Pourquoi pas un import ? » – « Il faudrait faire venir l'informaticien. Il coûte cher. Comme ça, c'est moins cher. »</p></div>
+    <div class="scene"><div class="k">Deuxième scène</div><h3>Le cours de change</h3><p>Une collaboratrice saisit déjà les données de mai. On découvre ensuite que l'informaticien a oublié d'entrer le nouveau cours trimestriel. Tout est à ressaisir.</p></div>
+    <div class="scene"><div class="k">Troisième scène</div><h3>Les rapports pour le propriétaire</h3><p>Le CFO a préparé les rapports. Le propriétaire apporte encore des factures, antidatées. Tous les rapports sont faux, tout est à refaire.</p></div>
+  </div>
+  <p class="quote">Sur l'AWC, ces scènes n'existent pas. Les données entrent automatiquement. Le cours est pris de lui-même, l'officiel, à la bonne date. Une facture antidatée, le système la passe et recalcule le rapport en quelques secondes : les rapports sortent des livres, pas d'un Excel tenu à la main.</p>
+</div></section>
+
+<section class="s band"><div class="wrap">
+  <span class="s-no">04 · Ce que la station apporte</span>
+  <h2 class="h2">Chaque matin, les livres concordent avec la banque. Tout le reste se construit là-dessus</h2>
+  <div class="grid2">
+    <ul class="dash">
+      <li><strong>Une information mise à jour chaque matin</strong>, pour les décisions et les décomptes, et non à la fin du mois, du trimestre ou de l'année.</li>
+      <li><strong>Des factures aux clients</strong> avec QR et sous votre logo, à l'unité et en masse. En quelques secondes.</li>
+      <li><strong>Les échéanciers</strong> débiteurs et créanciers : ce qui est ouvert, ce qui est en retard, ce qui arrive.</li>
+      <li><strong>Journal, plan comptable et interface</strong> en quatre langues à la fois : DE, FR, IT, EN. Chacun lit dans la sienne.</li>
+      <li><strong>Des archives intelligentes</strong> de pièces numériques : chaque pièce est rattachée à son écriture ; copies en plusieurs lieux indépendants.</li>
+      <li><strong>Caisses et banques</strong>, multidevises.</li>
+    </ul>
+    <ul class="dash">
+      <li><strong>Paiements aux fournisseurs directement depuis votre ordinateur</strong> : le fichier pour l'e-banking est prêt, vous validez.</li>
+      <li><strong>Catalogues de produits et de services</strong>, chargement depuis un fichier.</li>
+      <li><strong>TVA</strong> au format PDF et eCH-0217 et <strong>comptes annuels</strong> directement à partir des livres.</li>
+      <li><strong>Toute devise et toute structure de plan comptable.</strong></li>
+      <li><strong>Migration depuis votre programme :</strong> le plan comptable et les soldes sont chargés depuis un fichier, le reste est repris pendant le pilote. Vos livres peuvent toujours être exportés sous forme de fichier.</li>
+    </ul>
+  </div>
+  <h3 style="margin-top:2rem;font-size:1.15rem">Et vos clients pourront avoir ce qu'une fiduciaire ne vend habituellement pas <span class="tag">se construit sur votre mandat</span></h3>
+  <p style="max-width:70ch">Stock et gestion des inventaires · caisses enregistreuses et POS · rappels automatiques aux débiteurs · ERP sur base EspoCRM. Chaque point devient une ligne du contrat.</p>
+  <p style="max-width:70ch">Ce qui est automatisé aujourd'hui, ce qui est automatisable et ce qui reste à l'humain, sur une seule page : <a href="https://arvut.ch/automation/#fr">arvut.ch/automation</a>.</p>
+  <p class="quote">Les classeurs et la cave ne sont plus un outil de travail : on travaille avec la copie numérique, rattachée à l'écriture. Ce qu'il faut conserver en original, c'est la loi qui le décide, pas l'habitude.</p>
+</div></section>
+
+<section class="s"><div class="wrap">
+  <span class="s-no">05 · Le bureau, si vous le souhaitez</span>
+  <p style="max-width:66ch;font-size:1.15rem;color:var(--ink)">Le bureau devient un choix, pas une nécessité : avec l'AWC, le comptable travaille là où cela lui convient, et les livres concordent chaque matin.</p>
+  <figure class="awc-photo"><picture><source srcset="../img/awc-scene.webp" type="image/webp"><img src="../img/awc-scene.jpg" alt="Un portable AWC sur une table près de la fenêtre, avec le lac et les montagnes" width="1600" height="900" loading="lazy"></picture></figure>
+</div></section>
+
+<section class="s band"><div class="wrap">
+  <span class="s-no">06 · Comment cela se passe</span>
+  <h2 class="h2">Trois étapes</h2>
+  <div class="steps">
+    <div class="step"><h3>Nous l'apportons pour une journée</h3><p>Nous installons l'AWC à côté de votre comptable et prenons l'un de vos mandats en parallèle de vos livres. Pour le client, rien ne change.</p></div>
+    <div class="step"><h3>Si c'est oui, l'ordinateur reste</h3><p>Une heure de prise en main, ABM Courier pour vos clients, des accès sous votre marque.</p></div>
+    <div class="step"><h3>Ensuite, ABM travaille</h3><p>Vous contrôlez et signez sous votre nom. Les mandats sont les vôtres, la marque est la vôtre, le prix au client, c'est vous qui le fixez.</p></div>
+  </div>
+  <p class="quote" style="margin-top:1.8rem"><strong>La station n'a pas de prix à part.</strong> Vous payez selon le <a href="https://arvut.ch/fr/tarifs">tarif pour fiduciaires</a> — pour les écritures qui concordent avec la banque.</p>
+  <div class="cta" style="margin-top:2rem"><a class="btn" href="https://arvut.ch/fr/contact">Nous contacter →</a></div>
+  <p style="margin-top:1rem;color:var(--ink-3)">Ou une seule ligne en réponse à notre courrier.</p>
+</div></section>
+
+<footer><span>Arvut GmbH · Zug</span><span>AWC · ABM Working Computer</span><span><a href="https://arvut.ch/automation/#fr">Ce qui est automatisé</a></span></footer>
+</body>
+</html>
