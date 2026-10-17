@@ -54,7 +54,7 @@ a{color:var(--teal-d)}
 .hero .media{float:right;width:min(58%,860px);margin:-8px calc(var(--gut)*-.35) 12px 32px;shape-outside:polygon(39.6% 2.7%, 38.3% 3.9%, 37.7% 9.8%, 35.5% 56.1%, 2.2% 72.8%, 2.2% 74.6%, 7.1% 77.3%, 64.7% 96.1%, 68.6% 96.5%, 89.3% 76.5%, 93.7% 70.7%, 94.8% 64.1%, 97.8% 10.7%, 97.5% 7.7%, 96.2% 6.2%) content-box;shape-margin:clamp(24px,2.6vw,40px)}
 .media img{width:100%;height:auto;display:block;filter:drop-shadow(0 30px 40px rgba(18,38,38,.12))}
 .media .cap{font-family:var(--f-mono);font-size:.7rem;color:var(--ink-3);text-align:center;margin-top:10px;letter-spacing:.04em}
-section.s{padding:clamp(40px,6vw,88px) 0;border-top:1px solid var(--line)}
+section.s{scroll-margin-top:16px;padding:clamp(40px,6vw,88px) 0;border-top:1px solid var(--line)}
 section.s.band{background:var(--paper-2)}
 .s-no{font-family:var(--f-mono);font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;color:var(--teal-d);display:block;margin-bottom:.9rem}
 .h2{font-size:clamp(1.6rem,3vw,2.5rem);max-width:28ch;margin-bottom:1.4rem}
@@ -198,7 +198,7 @@ footer{border-top:1px solid var(--line);padding:28px var(--gut) 40px;font-family
   <p class="quote">Classificatori e cantina non sono più uno strumento di lavoro: si lavora con la copia digitale, allegata alla registrazione. Cosa conservare in originale lo decide la legge, non l'abitudine.</p>
 </div></section>
 
-<section class="s"><div class="wrap">
+<section class="s" id="office"><div class="wrap">
   <span class="s-no">05 · L'ufficio, se lo volete</span>
   <p style="font-size:1.15rem;color:var(--ink)">L'ufficio è una scelta, non una necessità: con l'AWC il contabile lavora dove gli è più comodo, e i libri quadrano ogni mattina.</p>
   <div class="postcards">
@@ -226,5 +226,6 @@ footer{border-top:1px solid var(--line);padding:28px var(--gut) 40px;font-family
 
 <a class="to-top" href="#" aria-label="Torna su"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg></a>
 <script src="../top.js"></script>
+<script src="../langs.js"></script>
 </body>
 </html>
